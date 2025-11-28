@@ -15,7 +15,7 @@ export default function Profile() {
         try {
             const token = localStorage.getItem("token")
             
-            const response = await axios.get("http://localhost:4000/api/v1/auth/fetch", {
+            const response = await axios.get("https://discussiondock-backend.onrender.com/api/v1/auth/fetch", {
             headers: {
                 "Authorization": `Bearer ${token}`
             }

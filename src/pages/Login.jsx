@@ -26,7 +26,7 @@ export default ({setIsLoggedIn}) => {
         const postData = JSON.stringify(formData);
 
         try{
-            const response = await fetch("http://localhost:4000/api/v1/auth/login", {
+            const response = await fetch("https://discussiondock-backend.onrender.com/api/v1/auth/login", {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: postData

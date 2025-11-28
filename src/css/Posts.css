@@ -1,0 +1,18 @@
+.main_posts{
+    /* border: 1px solid red; */
+    height: 88vh;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; 
+}
+
+.main_posts::-webkit-scrollbar {
+    display: none;
+}
+
+.noPostUploadButton{
+    border: 2px solid rgb(66, 64, 64);
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    width: max-content;
+}

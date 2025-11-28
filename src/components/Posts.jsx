@@ -13,7 +13,7 @@ export default ({ heading, selectedCommunity }) => {
       try {
         setLoading(true);
         const token = localStorage.getItem("token");
-        const response = await fetch("http://localhost:4000/api/v1/getPosts", {
+        const response = await fetch("https://discussiondock-backend.onrender.com/api/v1/getPosts", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,

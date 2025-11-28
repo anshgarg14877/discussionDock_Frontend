@@ -14,7 +14,7 @@ export default function Postcard({ post }) {
         try {
         const token = localStorage.getItem('token')
         const response = await axios.post(
-            `http://localhost:4000/api/v1/post/like/${post._id}`,
+            `https://discussiondock-backend.onrender.com/api/v1/post/like/${post._id}`,
             {},
             {
             headers: {
@@ -34,7 +34,7 @@ export default function Postcard({ post }) {
         try {
         const token = localStorage.getItem('token')
         const response = await axios.post(
-            `http://localhost:4000/api/v1/post/comment/${post._id}`,
+            `https://discussiondock-backend.onrender.com/api/v1/post/comment/${post._id}`,
             { content: newComment },
             {
             headers: {

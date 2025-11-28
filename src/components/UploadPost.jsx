@@ -203,7 +203,7 @@ export default ({setFlag}) => {
 
         try {
             const token = localStorage.getItem("token");
-            const response = await axios.post("http://localhost:4000/api/v1/uploadPost", formData, {
+            const response = await axios.post("https://discussiondock-backend.onrender.com/api/v1/uploadPost", formData, {
                 headers: { 
                     "Content-Type": "multipart/form-data",
                     "Authorization": `Bearer ${token}`
